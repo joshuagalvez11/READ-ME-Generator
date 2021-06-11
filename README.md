@@ -34,5 +34,10 @@ MIT License
 ## Features
 Uses inquirer, Creates file for generated readme
 
-## How to Contribute
+## Contribute
 However you would like
+
+## Questions
+Github: github.com
+
+Email: email.com
