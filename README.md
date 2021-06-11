@@ -21,6 +21,9 @@ If your README is long, add a table of contents to make it easy for users to fin
 1. Run index.js
 2. Enter information prompted by the console
 3. Check and make any neccesary adjustments to the readme   
+
+![demo video of command line and generated readme](./assets/readme-generator-demo.gif)
+
     
 ## Credits
 Joshua Galvez
