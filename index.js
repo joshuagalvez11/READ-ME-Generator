@@ -71,6 +71,17 @@ inquirer
         message: 'contribute: ',
         name: 'contribute',
     },
+    {
+      type: 'input',
+      message: 'github: ',
+      name: 'github',
+    },
+    {
+      type: 'input',
+      message: 'email: ',
+      name: 'email',
+    },
+
   ])
   .then((response) =>
     {
@@ -83,6 +94,8 @@ inquirer
         license = response.license;
         features = response.features;
         contribute = response.contribute;
+        github = response.github;
+        email = response.email;
 
         var readme = 
 `
@@ -99,6 +112,7 @@ If your README is long, add a table of contents to make it easy for users to fin
 - [License](#license)
 - [Features](#features)
 - [Contribute](#contribute)
+- [Questions](#questions)
 
 ## Installation
 ${installation}
@@ -115,8 +129,13 @@ ${license}
 ## Features
 ${features}
 
-## How to Contribute
+## Contribute
 ${contribute}
+
+## Questions
+Github: ${github}
+
+Email: ${email}
 `
 
     fs.writeFile('read.md', readme, (err) =>
